@@ -16,9 +16,8 @@ class Avatar extends \yii\db\ActiveRecord
         return [
             
             [['image'], 'required'],
-            [['image'], 'file', 'extensions'=>'jpg,jpeg,png'],
+             [['image'], 'file', 'extensions'=>'jpg,jpeg,png', 'maxFiles' => 5],
             // We can add this line as well for an additional security: 'mimeTypes' => 'image/jpg, image/jpeg, image/png'    
-            //[['image'], 'file', 'extensions'=>'jpg,jpeg,png', 'maxFiles' => 5],
         ];
     }
 
