@@ -12,4 +12,4 @@ use yii\helpers\Html ;
 
     <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
 
-<?php ActiveForm::end() ?>
+<?php ActiveForm::end() ?> 
