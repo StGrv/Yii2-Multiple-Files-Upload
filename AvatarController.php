@@ -13,7 +13,7 @@ class AvatarController extends \yii\web\Controller
       
         if ($avatar->load(Yii::$app->request->post())) {
             
-            $image = UploadedFile::getInstances($avatar, 'image') ;
+            $images = UploadedFile::getInstances($avatar, 'image') ;
             
             foreach($images as $image) {
                 $image->saveAs('@app/views/avatar/uploads/'.$image->baseName . '.' . $image->extension) ;
